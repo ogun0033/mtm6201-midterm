@@ -507,8 +507,7 @@ footer {
 .social-media {
 
     text-align: center;
-    border: 1px solid;
-
+ 
 }
 
 
@@ -532,9 +531,9 @@ footer {
 }
 
 
-.socialnav:hover {
+.socialnav a:hover {
     color: #d1fae5;
-    transform: scale(1.2);
+    transform: scale(2);
 }
 
 .end {
@@ -565,9 +564,8 @@ footer {
     /* Styling the logo */
     .logo-image {
         width: 300px;
-        /* padding-top: 30px; */
-    
-    } 
+
+    }
 
 
     /* Styling the navigation */
@@ -578,7 +576,7 @@ footer {
         align-items: center;
         margin-left: 100px;
         margin-right: 100px;
-         font-size: 25px; 
+        font-size: 25px;
     }
 
 
@@ -596,39 +594,34 @@ footer {
     .nav-list a:hover {
         transform: scale(1.2);
     }
-    
+
 
     /* About section */
 
-    h1{
+    h1 {
         margin-top: 5px;
     }
 
 
-    .float-container{
+    .float-container {
         width: 80%;
         margin: 0 auto;
         margin-top: 5px;
     }
 
-    .float-image{
+    .float-image {
         width: 500px;
     }
 
-    .about-p{
+    .about-p {
         font-size: 20px;
         line-height: 1.6;
     }
 
-/* Customers favorite */
-/* .meals{
-    width:80%;
-    margin: 0 auto;
-} */
-
-.gridf{
-    width: 80%;
-    margin: 0 auto;
+    /* Customers favorite */
+    .gridf {
+        width: 80%;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(9, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -641,30 +634,75 @@ footer {
     }
 
 
-    .fruit-meal{
+    .fruit-meal {
         grid-area: fruit-meal;
     }
 
 
 
-.chocolate-meal{
-    grid-area: chocolate-meal;
+    .chocolate-meal {
+        grid-area: chocolate-meal;
+    }
+
+
+    .order {
+        grid-area: order;
+    }
+
+    .vanilla {
+        grid-area: vanilla;
+    }
+
+    .raspberry {
+        grid-area: raspberry;
+    }
+
+
+
+
+
+    /* Styling the footer */
+
+    .footer-nav {
+        display: inline-block;
+       
+    }
+
+
+    .social-media{
+        text-align: center;
+        border-left: 2px solid #d1fae5;
+    }
+
+
+.footerh{
+    margin-top: 10px;
 }
 
+    .footergrid {
+        font-size: 20px;
+        line-height: 1.6;
+        display: grid;
+        margin: 0 auto;
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
 
-.order{
-    grid-area: order;
-}
+            "menugrid mediagrid";
 
-.vanilla{
-    grid-area: vanilla;
-}
-
-.raspberry{
-    grid-area: raspberry;
-}
+        gap: 1em;
+    }
 
 
+
+
+    .menugrid {
+        grid-area: menugrid;
+    }
+
+    .mediagrid {
+        grid-area: mediagrid;
+    }
 
 
 
