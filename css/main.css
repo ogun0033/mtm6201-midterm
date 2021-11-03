@@ -260,7 +260,7 @@ p {
 
 
 .body-container {
-    background-color: #d1fae5;
+    /* background-color: #d1fae5; */
     margin: 0 auto;
 }
 
@@ -301,6 +301,8 @@ p {
 .logo-image {
     width: 200px;
     padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 
 }
 
@@ -358,6 +360,7 @@ p {
 
 /* Styling the About section */
 
+
 h1 {
     text-align: center;
 }
@@ -370,6 +373,7 @@ h1 {
     border-radius: 5px;
     margin-left: 20px;
     margin-right: 15px;
+    margin-bottom: 30px;
 }
 
 .clearfix:after {
@@ -392,17 +396,128 @@ h1 {
 }
 
 
-/* Styling the Customers Favorites section */
+
+/* Styling the special button */
+
+.order {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
+    box-shadow: 8px 8px #10b981;
+    margin-top: 20px;
+}
+
+
+/* Animating the button */
+
+.order {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, -10px);
+    }
+
+    50% {
+        transform: translate(0, -10px);
+    }
+
+
+    100% {
+        transform: translate(0, 5px);
+    }
+}
+
+
+/* Styling the footer */
+
+footer {
+    background-color: #10b981;
+
+}
+
+.footerh {
+    text-decoration: underline;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.footer-nav {
+
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+
+
+/* Social Media Icons */
+
+.social-media {
+    text-align: center;
+
+}
+
+
+.socialh {
+    font-size: 15px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.socialnav {
+    font-size: 20px;
+    padding: 2px;
+    
+
+}
+
+.social-media a,
+.social-media a:link,
+.social-media a:visited {
+    display: block;
+
+}
+
+
+.socialnav a:hover {
+    color: #d1fae5;
+    transform: scale(2);
+}
+
+.end {
+
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 15px;
+}
+
+
+
+/* ----------Flavours Page----------- */
+
 h2 {
     font-size: 35px;
     text-align: center;
+    font-weight: bold;
 }
 
 .meals {
     width: 90%;
     margin: 0 auto;
     border-radius: 5px;
-    padding: 15px;
+    padding: 25px;
     background-color: #10b981;
     margin-left: 20px;
     margin-right: 5px;
@@ -438,23 +553,6 @@ h2 {
     font-weight: bold;
 }
 
-
-/* Styling the special button */
-
-.order {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    width: 80%;
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 50px;
-    box-shadow: -5px -5px #10b981;
-    margin-top: 20px;
-}
-
-
 /* Animating the buttons */
 
 .send:hover {
@@ -462,91 +560,21 @@ h2 {
 }
 
 
-.order {
-    animation-name: move;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes move {
-    0% {
-        transform: translate(0, -10px);
-    }
-
-    50% {
-        transform: translate(0, -10px);
-    }
-
-
-    100% {
-        transform: translate(0, 5px);
-    }
-}
-
-
-/* Styling the footer */
-
-footer {
-    background-color: #10b981;
-
-}
-
-.footerh {
-    text-decoration: underline;
-    font-size: 20px;
-    margin-bottom: 0; 
-}
-
-.footer-nav {
-    
-    font-size: 15px;
-    color: black;
-    text-align: center;
-}
 
 
 
-/* Social Media Icons */
-
-.social-media {
-    text-align: center;
-
-}
 
 
-.socialh {
-    font-size: 15px;
-    text-decoration: underline;
-    margin-bottom: 15px;
-    margin-top: 5px;
-}
-
-.socialnav {
-    font-size: 20px;
-    padding: 2px;
-
-}
-
-.social-media a,
-.social-media a:link,
-.social-media a:visited {
-    display: block;
-
-}
 
 
-.socialnav a:hover {
-    color: #d1fae5;
-    transform: scale(2);
-}
 
-.end {
 
-    font-weight: bold;
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 15px;
-}
+
+
+
+
+
+
 
 
 /* --------------Contact Page----------------- */
@@ -643,6 +671,7 @@ th {
     border: 2px solid;
     margin-top: 60px;
     text-align: center;
+    border-radius: 5px;
 
 }
 
@@ -656,6 +685,7 @@ th {
     border: 2px solid;
     text-align: center;
     padding-top: 20px;
+    border-radius: 5px;
 }
 
 
@@ -664,6 +694,7 @@ th {
     width: 400px;
     height: 400px;
     border: 2px solid #10b981;
+    border-radius: 5px;
 }
 
 
@@ -678,6 +709,8 @@ th {
 
 /* ------------Desktop Styles--------- */
 @media screen and (min-width: 700px) {
+
+    /*---------- Homepage------------- */
 
     /* Greeting Text */
     .greeting {
@@ -749,46 +782,14 @@ th {
         line-height: 1.6;
     }
 
-    /* Customers favorite */
-    .gridf {
-        width: 70%;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:
-
-            "fruit-meal fruit-meal fruit-meal chocolate-meal chocolate-meal chocolate-meal order order order"
-            "vanilla vanilla vanilla raspberry raspberry raspberry order order order"
-        ;
-        gap: 40px;
-    }
 
 
-    .fruit-meal {
-        grid-area: fruit-meal;
-    }
+    /* Special Button */
 
-
-
-    .chocolate-meal {
-        grid-area: chocolate-meal;
-    }
-
-
-    .order {
-        grid-area: order;
-    }
-
-    .vanilla {
-        grid-area: vanilla;
-    }
-
-    .raspberry {
-        grid-area: raspberry;
-    }
-
-
+.order{
+    margin-left: 10%;
+    margin-bottom: 40px;
+}
 
 
 
@@ -810,23 +811,23 @@ th {
         margin-top: 10px;
         font-size: 20px;
     }
- 
-.footer-nav{
-    font-size: 15px;
-   
-  
-} 
 
-/* SOcial Media Icons */
-.socialnav{  
-line-height: 50px;
-}
+    .footer-nav {
+        font-size: 15px;
 
 
-.socialh{
-    font-size: 20px;
-    font-weight: bold;
-}
+    }
+
+    /* SOcial Media Icons */
+    .socialnav {
+        line-height: 50px;
+    }
+
+
+    .socialh {
+        font-size: 20px;
+        font-weight: bold;
+    }
 
 
     .footergrid {
@@ -855,93 +856,137 @@ line-height: 50px;
 
 
 
+/* -----------------Flavours Page */
 
+    .flavourh{
+        font-size: 50px;
+    }
 
-
- /* -----------Contact Page------------ */
-
-/* Contact form */
-
-.form-border{
-    font-size: 25px;
-}
-
-#fullname {
-  padding:15px;
-
-}
-
-#youremail {
-    padding: 15px;
-}
-
-#subject{
-    padding: 15px;
-}
-
-
-.sendmssg{
-    padding: 20px 40px;
-    font-size: 20px;
-    box-shadow: -5px -5px #10b981;
-  margin-left: 40%;
     
-}
+    .gridf {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+
+            "fruit-meal fruit-meal chocolate-meal chocolate-meal"
+            "vanilla vanilla raspberry raspberry"
+        ;
+        gap: 60px;
+    }
+
+
+    .fruit-meal {
+        grid-area: fruit-meal;
+    }
+
+
+
+    .chocolate-meal {
+        grid-area: chocolate-meal;
+    }
+
+    .vanilla {
+        grid-area: vanilla;
+    }
+
+    .raspberry {
+        grid-area: raspberry;
+    }
 
 
 
 
 
-/* Operating hours */
 
-.oper{
-margin-top: 50px;
-}
+    /* -----------Contact Page------------ */
+
+    /* Contact form */
+
+    .form-border {
+        font-size: 25px;
+    }
+
+    #fullname {
+        padding: 15px;
+
+    }
+
+    #youremail {
+        padding: 15px;
+    }
+
+    #subject {
+        padding: 15px;
+    }
+
+
+    .sendmssg {
+        padding: 20px 40px;
+        font-size: 20px;
+        box-shadow: 5px 5px #10b981;
+        margin-left: 40%;
+
+    }
 
 
 
 
-table,
-td,
-th {
-    font-size: 20px;
-}
+
+    /* Operating hours */
+
+    .oper {
+        margin-top: 50px;
+    }
+
+
+
+
+    table,
+    td,
+    th {
+        font-size: 20px;
+    }
 
 
 
 
     /* Phone number */
 
-.number{ width: 40%;
-   
-}
+    .number {
+        width: 40%;
 
-.numberf{
-    font-size: 40px;
-}
+    }
 
-
-
-
-/* Location */
-.locationh{
-    margin-top: 80px;
-    width: 50%;
-    font-size: 40px;
-}
+    .numberf {
+        font-size: 40px;
+    }
 
 
-.direct{
-    font-size: 35px;
-    font-weight: bold;
-    margin-top: 60px;
-}
 
-.map{
-width:80%;
-height: 600px;
 
-}
+    /* Location */
+    .locationh {
+        margin-top: 80px;
+        width: 50%;
+        font-size: 40px;
+    }
+
+
+    .direct {
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 60px;
+    }
+
+    .map {
+        width: 80%;
+        height: 600px;
+
+    }
 
 
 
