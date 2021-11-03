@@ -260,9 +260,32 @@ p {
 
 
 .body-container {
-    /* background-color: #d1fae5; */
     margin: 0 auto;
 }
+
+/* Styling the skip links */
+.skip-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skip-links a {
+    position: absolute;
+    top: -3em;
+    background-color: black;
+    color: white;
+    padding: .5em 1em;
+    font-weight: bold;
+}
+
+.skip-links a:focus {
+    top: 0;
+}
+
+
+
+
 
 /* Styling the greeting message */
 .greeting {
@@ -396,6 +419,12 @@ h1 {
 }
 
 
+/* Styling the references */
+small {
+    margin-left: 40%;
+
+}
+
 
 /* Styling the special button */
 
@@ -451,12 +480,18 @@ footer {
     margin-bottom: 0;
 }
 
+/* ul .footer-nav  li{
+    border: none;
+} */
+
+
 .footer-nav {
 
     font-size: 15px;
     color: black;
     text-align: center;
 }
+
 
 
 
@@ -478,7 +513,7 @@ footer {
 .socialnav {
     font-size: 20px;
     padding: 2px;
-    
+
 
 }
 
@@ -540,9 +575,6 @@ h2 {
 }
 
 
-.name {
-    text-align: center;
-}
 
 
 .send {
@@ -786,10 +818,10 @@ th {
 
     /* Special Button */
 
-.order{
-    margin-left: 10%;
-    margin-bottom: 40px;
-}
+    .order {
+        margin-left: 10%;
+        margin-bottom: 40px;
+    }
 
 
 
@@ -856,18 +888,20 @@ th {
 
 
 
-/* -----------------Flavours Page */
+    /* -----------------Flavours Page */
 
-    .flavourh{
+    .flavourh {
         font-size: 50px;
     }
 
-    
+
     .gridf {
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
         margin-bottom: 30px;
-        display: grid;
+    }
+
+    /* display: grid;
         grid-template-columns: repeat(4, auto);
         grid-template-rows: repeat(2, auto);
         grid-template-areas:
@@ -896,6 +930,48 @@ th {
     .raspberry {
         grid-area: raspberry;
     }
+ */
+
+
+    .fruit-meal {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-bottom: 70px;
+    }
+
+    .detail {
+        padding-top: 40%;
+        margin-left: 40px;
+    }
+
+    .name {
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+
+
+    .vanilla {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-bottom: 70px;
+    }
+
+
+
+
+    .raspberry {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        margin-bottom: 70px;
+    }
+
+
+    .chocolate-meal {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
 
 
 
