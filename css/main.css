@@ -519,10 +519,7 @@ footer {
     margin-bottom: 0;
 }
 
-/* ul .footer-nav  li{
-    border: none;
-} */
-
+ 
 
 .footer-nav {
 
@@ -891,6 +888,11 @@ th {
 
     }
 
+    .footer-nav  li{
+        border: none;
+    } 
+    
+
     /* SOcial Media Icons */
     .socialnav {
         line-height: 50px;
@@ -941,37 +943,6 @@ th {
         margin: 0 auto;
         margin-bottom: 30px;
     }
-
-    /* display: grid;
-        grid-template-columns: repeat(4, auto);
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
-
-            "fruit-meal fruit-meal chocolate-meal chocolate-meal"
-            "vanilla vanilla raspberry raspberry"
-        ;
-        gap: 60px;
-    }
-
-
-    .fruit-meal {
-        grid-area: fruit-meal;
-    }
-
-
-
-    .chocolate-meal {
-        grid-area: chocolate-meal;
-    }
-
-    .vanilla {
-        grid-area: vanilla;
-    }
-
-    .raspberry {
-        grid-area: raspberry;
-    }
- */
 
 
     .fruit-meal {
